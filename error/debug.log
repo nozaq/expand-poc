@@ -1,0 +1,91 @@
+2022-02-26T01:48:47.493+0900 [INFO]  Terraform version: 1.1.6
+2022-02-26T01:48:47.493+0900 [INFO]  Go runtime version: go1.17.2
+2022-02-26T01:48:47.493+0900 [INFO]  CLI args: []string{"REDACTED/terraform", "plan", "-no-color"}
+2022-02-26T01:48:47.493+0900 [DEBUG] Attempting to open CLI config file: /home/_/.terraformrc
+2022-02-26T01:48:47.493+0900 [INFO]  Loading CLI configuration from /home/_/.terraformrc
+2022-02-26T01:48:47.493+0900 [DEBUG] Explicit provider installation configuration is set
+2022-02-26T01:48:47.493+0900 [INFO]  CLI command args: []string{"plan", "-no-color"}
+2022-02-26T01:48:47.493+0900 [DEBUG] New state was assigned lineage "d0377808-f97b-45a8-0084-8dc128801cf7"
+2022-02-26T01:48:47.525+0900 [DEBUG] checking for provisioner in "."
+2022-02-26T01:48:47.525+0900 [DEBUG] checking for provisioner in "REDACTED/bin"
+2022-02-26T01:48:47.525+0900 [INFO]  backend/local: starting Plan operation
+2022-02-26T01:48:47.526+0900 [DEBUG] created provider logger: level=debug
+2022-02-26T01:48:47.526+0900 [INFO]  provider: configuring client automatic mTLS
+2022-02-26T01:48:47.533+0900 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5]
+2022-02-26T01:48:47.533+0900 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276252
+2022-02-26T01:48:47.533+0900 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5
+2022-02-26T01:48:47.536+0900 [INFO]  provider.terraform-provider-null_v3.1.0_x5: configuring server automatic mTLS: timestamp=2022-02-26T01:48:47.536+0900
+2022-02-26T01:48:47.561+0900 [DEBUG] provider.terraform-provider-null_v3.1.0_x5: plugin address: address=/tmp/plugin530739035 network=unix timestamp=2022-02-26T01:48:47.561+0900
+2022-02-26T01:48:47.561+0900 [DEBUG] provider: using plugin: version=5
+2022-02-26T01:48:47.582+0900 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2022-02-26T01:48:47.583+0900 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276252
+2022-02-26T01:48:47.592+0900 [DEBUG] provider: plugin exited
+2022-02-26T01:48:47.592+0900 [DEBUG] Building and walking validate graph
+2022-02-26T01:48:47.592+0900 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/null"], implied first by null_resource.this
+2022-02-26T01:48:47.592+0900 [DEBUG] ProviderTransformer: "module.a.data.null_data_source.foo" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.592+0900 [DEBUG] ProviderTransformer: "module.a.data.null_data_source.bar" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.592+0900 [DEBUG] ProviderTransformer: "null_resource.this" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "module.a (expand)" references: [null_resource.this]
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "module.a (close)" references: []
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "null_resource.this" references: []
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "module.a.data.null_data_source.foo" references: []
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "module.a.data.null_data_source.bar" references: [module.a.data.null_data_source.foo]
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "module.a.var.input (expand)" references: []
+2022-02-26T01:48:47.592+0900 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2022-02-26T01:48:47.592+0900 [DEBUG] Starting graph walk: walkValidate
+2022-02-26T01:48:47.592+0900 [DEBUG] created provider logger: level=debug
+2022-02-26T01:48:47.593+0900 [INFO]  provider: configuring client automatic mTLS
+2022-02-26T01:48:47.601+0900 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5]
+2022-02-26T01:48:47.601+0900 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276263
+2022-02-26T01:48:47.601+0900 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5
+2022-02-26T01:48:47.604+0900 [INFO]  provider.terraform-provider-null_v3.1.0_x5: configuring server automatic mTLS: timestamp=2022-02-26T01:48:47.604+0900
+2022-02-26T01:48:47.629+0900 [DEBUG] provider.terraform-provider-null_v3.1.0_x5: plugin address: address=/tmp/plugin057667293 network=unix timestamp=2022-02-26T01:48:47.629+0900
+2022-02-26T01:48:47.629+0900 [DEBUG] provider: using plugin: version=5
+2022-02-26T01:48:47.654+0900 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2022-02-26T01:48:47.655+0900 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276263
+2022-02-26T01:48:47.665+0900 [DEBUG] provider: plugin exited
+2022-02-26T01:48:47.665+0900 [INFO]  backend/local: plan calling Plan
+2022-02-26T01:48:47.665+0900 [DEBUG] Building and walking plan graph for NormalMode
+2022-02-26T01:48:47.665+0900 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/null"], implied first by null_resource.this (expand)
+2022-02-26T01:48:47.665+0900 [DEBUG] ProviderTransformer: "null_resource.this (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.665+0900 [DEBUG] ProviderTransformer: "module.a.data.null_data_source.bar (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.665+0900 [DEBUG] ProviderTransformer: "module.a.data.null_data_source.foo (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "module.a.data.null_data_source.foo (expand)" references: []
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "module.a.var.input (expand)" references: []
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "module.a (expand)" references: [null_resource.this (expand)]
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "module.a (close)" references: []
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "null_resource.this (expand)" references: []
+2022-02-26T01:48:47.666+0900 [DEBUG] ReferenceTransformer: "module.a.data.null_data_source.bar (expand)" references: [module.a.data.null_data_source.foo (expand)]
+2022-02-26T01:48:47.666+0900 [DEBUG] Starting graph walk: walkPlan
+2022-02-26T01:48:47.666+0900 [DEBUG] created provider logger: level=debug
+2022-02-26T01:48:47.666+0900 [INFO]  provider: configuring client automatic mTLS
+2022-02-26T01:48:47.677+0900 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5]
+2022-02-26T01:48:47.677+0900 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276275
+2022-02-26T01:48:47.677+0900 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5
+2022-02-26T01:48:47.681+0900 [INFO]  provider.terraform-provider-null_v3.1.0_x5: configuring server automatic mTLS: timestamp=2022-02-26T01:48:47.680+0900
+2022-02-26T01:48:47.710+0900 [DEBUG] provider: using plugin: version=5
+2022-02-26T01:48:47.710+0900 [DEBUG] provider.terraform-provider-null_v3.1.0_x5: plugin address: address=/tmp/plugin444781632 network=unix timestamp=2022-02-26T01:48:47.710+0900
+2022-02-26T01:48:47.730+0900 [DEBUG] Resource instance state not found for node "null_resource.this", instance null_resource.this
+2022-02-26T01:48:47.730+0900 [DEBUG] ReferenceTransformer: "null_resource.this" references: []
+2022-02-26T01:48:47.730+0900 [DEBUG] refresh: null_resource.this: no state, so not refreshing
+2022-02-26T01:48:47.731+0900 [DEBUG] Resource instance state not found for node "module.a.data.null_data_source.foo", instance module.a.data.null_data_source.foo
+2022-02-26T01:48:47.731+0900 [DEBUG] ReferenceTransformer: "module.a.data.null_data_source.foo" references: []
+2022-02-26T01:48:47.731+0900 [ERROR] vertex "module.a.data.null_data_source.bar" error: Invalid for_each argument
+2022-02-26T01:48:47.731+0900 [ERROR] vertex "module.a.data.null_data_source.bar (expand)" error: Invalid for_each argument
+2022-02-26T01:48:47.732+0900 [INFO]  backend/local: plan operation completed
+
+Error: Invalid for_each argument
+
+  on modules/foo/main.tf line 5, in data "null_data_source" "bar":
+   5:   for_each = toset([data.null_data_source.foo.random])
+    ├────────────────
+    │ data.null_data_source.foo.random is a string, known only after apply
+
+The "for_each" value depends on resource attributes that cannot be determined
+until apply, so Terraform cannot predict how many instances will be created.
+To work around this, use the -target argument to first apply only the
+resources that the for_each depends on.
+2022-02-26T01:48:47.733+0900 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2022-02-26T01:48:47.734+0900 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.1.0/linux_amd64/terraform-provider-null_v3.1.0_x5 pid=276275
+2022-02-26T01:48:47.743+0900 [DEBUG] provider: plugin exited
